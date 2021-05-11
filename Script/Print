@@ -1,0 +1,43 @@
+# note
+print("#" * 90)
+print(" you can write the first of every word note: months = mon, millseconds = mill ".center(90, "#"))
+print("#" * 90)
+
+while True:
+    # get the age
+    age = input("what's your age?: ").strip()
+
+    # get the unit time
+
+    unit = input("choose your unit time Weeks, Days, Months, Hours, Minutes, Seconds: ").strip().lower()
+
+    # collect data
+
+    months = int(age) * 12
+    weeks = months * 4
+    days = int(age) * 365
+    hours = days * 24
+    minutes = hours * 60
+    seconds = minutes * 60
+    millseconds = seconds * 60
+
+    if unit == 'months' or unit == 'mon':
+        print("you lived for: {} months.".format(months))
+
+    if unit == 'weeks' or unit == 'w':
+        print("you lived for {} weeks".format(weeks))
+
+    if unit == 'days' or unit == 'd':
+        print("you lived for: {} days.".format(days))
+
+    if unit == 'hours' or unit == 'h':
+        print("you lived for: {} hours.".format(hours))
+
+    if unit == 'minutes' or unit == 'm':
+        print("you lived for: {} minutes.".format(minutes))
+
+    if unit == 'seconds' or unit == 's':
+        print("you lived for: {} seconds.".format(seconds))
+
+    if unit == 'millseconds' or unit == 'mill':
+        print("you lived for {} millseconds.".format(millseconds)
